@@ -1,0 +1,120 @@
+Body {
+  background: var(--fundo) no-repeat top center/cover;
+}
+body * {
+  font-family: "Inter", sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --text-color: white;
+  --fundo: url(./assets/bg-mobile.jpg);
+  --botão-lua: url(assets/sun.svg);
+}
+.branco {
+  --text-color: rgb(255, 131, 131);
+  --fundo: url(./assets/bg-mobile-light.jpg);
+  --botão-de-sol: url(assets/moon-stars.svg);
+}
+
+#comtainer {
+  width: 360px;
+  margin: auto;
+  margin-top: 56px;
+  padding: 0 24px;
+}
+#perfil {
+  text-align: center;
+  padding: 24pvar (--text-color);
+}
+#perfil img {
+  width: 112px;
+}
+#letra {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+#luz-on samp {
+  display: block;
+  width: 64px;
+  height: 24px;
+  border: 2px solid;
+  border-radius: 9999px;
+  backdrop-filter: blur(4px);
+  background-color: #e6bebe7c;
+  
+}
+#luz-on{
+margin: 0 auto;  
+position: relative;
+width: 64px;
+margin: 7px auto;
+}
+#luz-on button {
+  width: 32px;
+  height: 32px;
+  background: white var(--botão-de-sol) no-repeat center;
+  background: white var(--botão-lua) no-repeat center;
+  border-radius: 50%;
+  border: 0;
+  
+  
+  position: absolute; 
+  top: 50%;
+   z-index: 1;
+   left: 0;
+   transform: translateY(-50%);
+}  
+.luz-on #switch button{
+  right:0;
+  left: initial;
+}
+ul li a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 16px 24px; 
+  background-color: #e6bebe7c;
+  border: 1px solid rgba(red, green, blue, alpha);
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.1s;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+ul li a:hover {
+  background-color: #e6bebe;
+}
+#sociais {
+  justify-content: center;
+  display: flex;
+  padding: 34px 0px;
+  font-size: 24px;
+}
+#sociais a :hover {
+  background-color: #e6bebe;
+  border-radius: 20%;
+  border: 1px var(--text-color);
+}
+#sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+footer {
+  color: var(--text-color);
+  padding: 24px 0px;
+  text-align: center;
+  font-size: 14px;
+}
